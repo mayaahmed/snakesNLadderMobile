@@ -62,7 +62,8 @@ function initial()
 }	 
  
 function newGame(){  
-
+restoreSnapshot()
+ context.drawImage(snakes, 0, 0,300,330);
 drawKandis();
 }
 
