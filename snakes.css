@@ -1,0 +1,58 @@
+
+
+#canvas{
+height:400px;
+width: 400px;
+// background: khaki;
+}
+
+.kandi {
+  width:  40px;
+  height: 40px;
+opacity: 0.9;
+}
+.kandi:hover {
+   width:  42px;
+  height: 42x;
+opacity: 1;
+}
+
+.dice {
+  width:  80px;
+  height: 80px;
+margin-left: 20px;
+}
+
+.dice:hover{
+width:  81px;
+  height: 81px;
+opacity: 0.9;
+}
+
+
+
+
+#dicePlace{
+width: 400px;
+display: flex;
+justify-content: center; 
+
+
+}
+
+.newButton{
+margin-top: 10px;
+width: 100px;
+height: 50px;
+box-shadow: 3px 3px 3px black;
+background: gray;
+color: beige;
+text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+font-size: 16px;
+
+}
+.newButton.hover{
+width:  101px;
+  height: 51px;
+
+}
