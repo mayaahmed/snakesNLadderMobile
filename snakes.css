@@ -35,7 +35,7 @@ opacity: 0.9;
 
 #dicePlace{
 width: 400px;
-display: flex;
+// display: flex;
 // justify-content: center; 
 
 
@@ -50,7 +50,7 @@ background: gray;
 color: beige;
 text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 font-size: 12px;
-
+float: left;
 }
 .newButton.hover{
 width:  76px;
