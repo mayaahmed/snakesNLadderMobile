@@ -7,7 +7,7 @@
         id        = "com.mayamohsinahmed.snakesNLadderMobile"
         version   = "1.0.0">
 
-    <name>Dots and Boxes</name>
+    <name>Snakes And Ladder </name>
 
     <description>
         The Snakes And Ladder Game app.
