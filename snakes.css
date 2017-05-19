@@ -25,8 +25,8 @@ margin-left: 20px;
 }
 
 .dice:hover{
-width:  81px;
-  height: 81px;
+// width:  81px;
+/  height: 81px;
 opacity: 0.9;
 }
 
