@@ -1,8 +1,9 @@
 
 
 #canvas{
-height:400px;
-width: 400px;
+margin-top: 10px;
+height:300px;
+width: 300px;
 // background: khaki;
 }
 
@@ -35,7 +36,7 @@ opacity: 0.9;
 #dicePlace{
 width: 400px;
 display: flex;
-justify-content: center; 
+// justify-content: center; 
 
 
 }
