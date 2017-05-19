@@ -57,7 +57,7 @@ function restoreSnapshot() {
 function initial()
 {takeSnapshot();
   snakes.onload = function () {
-        context.drawImage(snakes, 0, 0,400,330); }; 
+        context.drawImage(snakes, 0, 0,300,330); }; 
   
 }	 
  
@@ -110,7 +110,7 @@ var	img0 = new Image();
 initial();
 
  function imageDrawAll(){
- context.drawImage(snakes, 0, 0,400,330);
+ context.drawImage(snakes, 0, 0,300,330);
 
         for(var i=0;i<kandis.length;i++)
            draw(false,false,kandis[i] );
