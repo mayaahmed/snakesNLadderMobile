@@ -13,8 +13,21 @@ var face5=new Image(); face5.src="./images/d6.png";
 
 function throw_dice(){
     var random_dice=Math.round(Math.random()*5); // 0..5
-    document.images["mydice"].src = eval("face"+random_dice+".src")
+    document.images["mydice"].src = eval("face"+random_dice+".src");
+makeDiceSound();
 }
+
+function makeDiceSound(){
+var audio = new Audio('dice.mp3');
+audio.play();
+
+}
+function makeMoveSound(){
+var audio = new Audio('move.mp3');
+audio.play();
+
+}
+
 
 var offsetX= canvas.offsetLeft;
 var offsetY= canvas.offsetTop;
@@ -80,7 +93,7 @@ function drawKandis(){
 
     var	img1 = new Image();
     img1.src= "./images/green.png";
-    kandis[1]={img: img1, imageX: 80, imageY: 350, imageWidth: 40, imageHeight: 40, imageRight: 0, imageBottom: 0};
+    kandis[1]={img: img1, imageX: 70, imageY: 350, imageWidth: 40, imageHeight: 40, imageRight: 0, imageBottom: 0};
     kandis[1].imageRight=kandis[0].imageX+kandis[0].imageWidth;
     kandis[1].imageBottom=kandis[0].imageY+kandis[0].imageHeight;
     kandis[1].img.onload = function () {
@@ -89,7 +102,7 @@ function drawKandis(){
 
     var	img2 = new Image();
     img2.src= "./images/red3.png";
-    kandis[2]={img: img2, imageX: 130, imageY: 350, imageWidth: 40, imageHeight: 40, imageRight: 0, imageBottom: 0};
+    kandis[2]={img: img2, imageX: 120, imageY: 350, imageWidth: 40, imageHeight: 40, imageRight: 0, imageBottom: 0};
     kandis[2].imageRight=kandis[0].imageX+kandis[0].imageWidth;
     kandis[2].imageBottom=kandis[0].imageY+kandis[0].imageHeight;
     kandis[2].img.onload = function () {
@@ -98,7 +111,7 @@ function drawKandis(){
 
     var	img3 = new Image();
     img3.src= "./images/yellow.png";
-    kandis[3]={img: img3, imageX: 180, imageY: 350, imageWidth: 40, imageHeight: 40, imageRight: 0, imageBottom: 0};
+    kandis[3]={img: img3, imageX: 170, imageY: 350, imageWidth: 40, imageHeight: 40, imageRight: 0, imageBottom: 0};
     kandis[3].imageRight=kandis[0].imageX+kandis[0].imageWidth;
     kandis[3].imageBottom=kandis[0].imageY+kandis[0].imageHeight;
     kandis[3].img.onload = function () {
@@ -203,6 +216,7 @@ function imageMouseUp(e){
     draggingImage=false;  
     restoreSnapshot();
     imageDrawAll();
+
     // draw(false,false,kandis[selectedImage]);
     selectedImage=-1;
 }
@@ -236,6 +250,7 @@ function imageMouseMove(e){
 	restoreSnapshot();
         // draw(true,true, kandis[selectedImage]);
 	imageDrawAll();
+	// makeMoveSound();
     }
 }
 
