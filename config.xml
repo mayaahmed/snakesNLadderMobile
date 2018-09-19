@@ -26,6 +26,10 @@
 <icon src="hdpi.png" platform="android" qualifier="hdpi" />
 <icon src="xhdpi.png" platform="android" qualifier="xhdpi" />
 <icon src="xxhdpi.png" platform="android" qualifier="xxhdpi" />
-
+<platform name="android">
+    <preference name="AndroidLaunchMode" value="singleTop"/>
+    <preference name="android-minSdkVersion" value="26" />
+    
+</platform>    
 
  </widget>
